@@ -1,40 +1,84 @@
-/* calculator.component.css */
 .calculator {
-    width: 300px;
-    margin: 0 auto;
-    background-color: #2e3b4e;
-    border-radius: 10px;
-    padding: 20px;
-    color: #fff;
-  }
-  
-  .display {
-    background-color: #1f2b38;
-    padding: 20px;
-    font-size: 32px;
-    border-radius: 5px;
-    text-align: right;
-    margin-bottom: 10px;
-  }
-  
-  .keypad {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3px;
-  }
-  
-  button {
-    font-size: 20px;
-    padding: 20px;
-    background-color: #ffffff;
-    border: none;
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button.reset {
-    grid-column: span 4;
-    background-color: #d9534f;
-  }
-  
+  max-width: 400px;
+  background-color: #3a4764;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: auto;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title {  
+  font-size: 24px;
+}
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.toggle input {
+  margin-left: 5px;
+}
+
+.display {
+  background-color: #181f32;
+  color: white;
+  font-size: 36px;
+  text-align: right;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+button {
+  background-color: #eae3dc;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d1c5b1;
+}
+
+button.del {
+  background-color: #647299;
+  color: white;
+}
+
+button.large {
+  grid-column: span 2;
+  background-color: #647299;
+  color: white;
+}
+
+button.equal {
+  background-color: #d03f2f;
+  color: white;
+  grid-column: span 2;
+}

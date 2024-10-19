@@ -1,27 +1,35 @@
-<!-- calculator.component.html -->
 <div class="calculator">
-    <div class="display">{{ currentNumber }}</div>
-    <div class="keypad">
-      <button (click)="getNumber('7')">7</button>
-      <button (click)="getNumber('8')">8</button>
-      <button (click)="getNumber('9')">9</button>
-      <button (click)="setOperator('/')">/</button>
-  
-      <button (click)="getNumber('4')">4</button>
-      <button (click)="getNumber('5')">5</button>
-      <button (click)="getNumber('6')">6</button>
-      <button (click)="setOperator('*')">x</button>
-  
-      <button (click)="getNumber('1')">1</button>
-      <button (click)="getNumber('2')">2</button>
-      <button (click)="getNumber('3')">3</button>
-      <button (click)="setOperator('-')">-</button>
-  
-      <button (click)="getDecimal()">.</button>
-      <button (click)="getNumber('0')">0</button>
-      <button (click)="getResult()">=</button>
-      <button (click)="setOperator('+')">+</button>
+  <div class="header">
+    <div class="title">calc</div>
+    <div class="theme-switch">
+      <span>THEME</span>
+      <div class="toggle">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <input type="checkbox">
+      </div>
     </div>
-    <button class="reset" (click)="clear()">RESET</button>
   </div>
-  
+  <div class="display">399,981</div>
+  <div class="buttons">
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button class="del">DEL</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>+</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>-</button>
+    <button>.</button>
+    <button>0</button>
+    <button>/</button>
+    <button>x</button>
+    <button class="large">RESET</button>
+    <button class="equal">=</button>
+  </div>
+</div>
